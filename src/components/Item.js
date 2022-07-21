@@ -1,3 +1,5 @@
+
+
 import React, { useState } from "react";
 
 function Item({ name, category }) {
@@ -6,6 +8,7 @@ function Item({ name, category }) {
   function handleAddToCartClick() {
     setIsInCart((isInCart) => !isInCart);
   }
+  
 
   return (
     <li className={isInCart ? "in-cart" : ""}>
